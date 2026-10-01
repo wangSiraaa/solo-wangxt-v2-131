@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f7fb;
+  font-synthesis: none;
+}
+
+body { margin: 0; }
+.header {
+  padding: 18px 28px;
+  color: white;
+  background: linear-gradient(120deg, #12355b, #1769aa);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 { margin: 0; font-size: 22px; }
+.header small { opacity: .78; }
+.layout { display: grid; grid-template-columns: 320px 1fr; gap: 18px; padding: 18px; }
+.panel {
+  background: white;
+  border: 1px solid #dce4ef;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(23, 45, 78, .06);
+}
+.manifest-item {
+  padding: 10px;
+  border: 1px solid #d9e2ee;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.manifest-item.active { border-color: #1769aa; background: #eef7ff; }
+.manifest-item h3 { margin: 0 0 5px; font-size: 15px; }
+.meta { color: #62708a; font-size: 12px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; }
+.badge.open { background: #fff4d6; color: #8a5a00; }
+.badge.completed { background: #dcf7e8; color: #116c36; }
+.badge.published, .badge.succeeded { background: #dcf7e8; color: #116c36; }
+.badge.needs_review { background: #ffe6d1; color: #994300; }
+.badge.failed, .badge.error, .badge.diagnostic_failed { background: #ffe0e6; color: #a01636; }
+.badge.warning, .badge.retry_wait, .badge.running, .badge.queued { background: #e1edff; color: #174c9c; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.metric { padding: 12px; border-radius: 10px; background: #f7f9fc; }
+.metric strong { display: block; font-size: 20px; }
+button { border: 0; border-radius: 7px; padding: 7px 11px; background: #1769aa; color: white; cursor: pointer; margin-right: 6px; }
+button.secondary { background: #64748b; }
+button.danger { background: #b4234a; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+.issue { border-left: 4px solid #f0a; padding: 8px 10px; margin: 7px 0; background: #fbfcfe; }
+.issue.error { border-color: #d8274f; }
+.issue.warning { border-color: #e99b1c; }
+.chart { height: 280px; margin-top: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { border-bottom: 1px solid #e5ebf3; padding: 7px; text-align: left; }
+pre { white-space: pre-wrap; max-height: 260px; overflow: auto; background: #0f172a; color: #dbeafe; padding: 12px; border-radius: 8px; }
